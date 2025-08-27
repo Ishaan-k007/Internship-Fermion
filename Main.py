@@ -1,4 +1,10 @@
+from sympy import to_dnf
+
+
+
+
 input = input("Pass a boolean expression to the script ")
+to_dnf(input, simplify=True)
 def concat_expression(expr):
     expr = expr.replace(" ", "")
     expr = expr.replace("~", " NOT ").replace("&", " AND ").replace("|", " OR ")
